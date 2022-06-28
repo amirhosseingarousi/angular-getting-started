@@ -1,0 +1,15 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand">{{ pageTitle }}</a>
+    <ul class="nav nav-pills">
+      <li class="nav-link" role="button" [routerLink]="['welcome']">Home</li>
+      <li class="nav-link" role="button" [routerLink]="['products']">
+        Product List
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
